@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at top, #1a1a1a 0%, #000000 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    width: 340px;
+    background: #111;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.display {
+    background: #000;
+    color: #fff;
+    font-size: 2.6em;
+    padding: 25px;
+    text-align: right;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    padding: 20px;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 12px;
+    background: #1e1e1e;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5),
+                -2px -2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.btn:hover {
+    background: #2c2c2c;
+    transform: scale(1.05);
+}
+.btn:active {
+    transform: scale(0.96);
+}
+
+.operator {
+    background: #ff9500;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 149, 0, 0.2);
+}
+.operator:hover {
+    background: #ffaa33;
+}
+
+.equals {
+    grid-column: 4;      
+    grid-row: 4 / span 2; 
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+    border-radius: 12px;
+    height: 100%;
+    align-self: stretch;
+}
+
+
+.equals:hover {
+    background: #339cff;
+    
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+.btn-dot {
+    grid-column: 3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
