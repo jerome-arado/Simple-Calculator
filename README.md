@@ -28,4 +28,7 @@ JavaScript - Handles button functionality and display logic.
    - cd Simple-Calculator
 3. Open the project
    - Simply open index.html in your browser.
-   
+
+# Author 
+Jerome Arado
+BSIT 3-3
