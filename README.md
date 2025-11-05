@@ -5,21 +5,16 @@ This project demonstrates basic front-end web development, focusing on layout de
 
 # Features
 
-- Responsive calculator layout with **grid-based design**
+- Responsive calculator layout with grid-based design
 - Dark mode theme for modern aesthetics
 - Supports basic arithmetic operations: addition, subtraction, multiplication, division
 - Functional C (clear) and DEL (delete last) buttons
 - Error handling for invalid expressions
 - Animated button interactions and subtle hover effects
-- Clean, readable **display screen**
+- Clean, readable display screen
 
 
-# Preview
-
-[Calculator Preview](Screenshot.png)
-
-
-Technologies Used
+# Technologies Used
 HTML5 - Defines the structure and content of the calculator.
 CSS3 - Styles the layout, colors, animations, and grid system.
 JavaScript - Handles button functionality and display logic.
